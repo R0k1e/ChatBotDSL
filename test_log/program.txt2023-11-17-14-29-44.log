@@ -1,0 +1,22 @@
+Read input from file: test_in\program.txt
+Variable vault path: ./var_vault/
+Create out file path: test_out\program.txt2023-11-17-14-29-44
+No variable file, create a new dict
+Debug mode
+No parsed string file, create a new one
+Program file: test_program\program.txt
+Parsed string
+Traceback (most recent call last):
+  File "D:\Code\DSL\main.py", line 24, in <module>
+    t.translate()
+  File "D:\Code\DSL\Translater.py", line 52, in translate
+    parsedStr = self.__IOManager.loadParsedStr()
+  File "D:\Code\DSL\IOManager.py", line 92, in loadParsedStr
+    p = self.__parser.grammarParse(s)
+  File "D:\Code\DSL\Parser.py", line 79, in grammarParse
+    r = self.grammar.parseString(string)
+  File "C:\Users\15570\.conda\envs\DSL\lib\site-packages\pyparsing\util.py", line 256, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\15570\.conda\envs\DSL\lib\site-packages\pyparsing\core.py", line 1197, in parse_string
+    raise exc.with_traceback(None)
+pyparsing.exceptions.ParseException: , found 'func'  (at char 122), (line:9, col:11)

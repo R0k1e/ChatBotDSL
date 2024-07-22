@@ -1,0 +1,45 @@
+Read input from file: test_in\find.txt
+Variable vault path: ./var_vault/
+Create out file path: test_out\find.txt2023-11-17-14-41-49
+No variable file, create a new dict
+Debug mode
+No parsed string file, create a new one
+Program file: test_program\find.txt
+Parsed string
+Parsed string:
+[['{', ['exec', ['"', 'echo Hello', '"'], ';'], ['send', ['"', 'please input your name', '"'], ';'], ['get', '$name', ';'], ['load', '$name', ';'], ['send', [['"', 'Welcome Mr/Miss ', '"'], '&', '$name', '&', ['"', ', what can I help you?', '"']], ';'], ['func', '_main', ['{', ['get', '$cmd', ';'], ['if', [['"', 'enquiry', '"'], 'in', '$cmd'], 'then', '_find', 'elif', [['"', 'complain', '"'], 'in', '$cmd'], 'then', '_complain', 'elif', [['"', 'exit', '"'], 'in', '$cmd'], 'then', '_exit', 'else', ['{', ['send', ['"', "sorry, we don't support this function yet", '"'], ';'], '}'], ';'], '}'], ';'], ['func', '_final', ['{', ['send', ['"', 'thank you for your use, goodbye', '"'], ';'], '}'], ';'], ['func', '_exit', ['{', ['exit', ';'], '}'], ';'], ['func', '_find', ['{', ['send', ['"', 'The fee in the next 3 months are', '"'], ';'], ['loop', '3', 'times', ['{', ['send', ['$fee', '&', ['"', 'dollars', '"']], ';'], ['$fee', '=', ['$fee', '+', '1.5'], ';'], '}'], ';'], '}'], ';'], ['func', '_complain', ['{', ['get', '$complain', ';'], ['send', ['"', 'Sorry, your complain has been saved.', '"'], ';'], '}'], ';'], ['_final', ';'], '}']]
+Not save parsed string to file
+Process block: ['{', ['exec', ['"', 'echo Hello', '"'], ';'], ['send', ['"', 'please input your name', '"'], ';'], ['get', '$name', ';'], ['load', '$name', ';'], ['send', [['"', 'Welcome Mr/Miss ', '"'], '&', '$name', '&', ['"', ', what can I help you?', '"']], ';'], ['func', '_main', ['{', ['get', '$cmd', ';'], ['if', [['"', 'enquiry', '"'], 'in', '$cmd'], 'then', '_find', 'elif', [['"', 'complain', '"'], 'in', '$cmd'], 'then', '_complain', 'elif', [['"', 'exit', '"'], 'in', '$cmd'], 'then', '_exit', 'else', ['{', ['send', ['"', "sorry, we don't support this function yet", '"'], ';'], '}'], ';'], '}'], ';'], ['func', '_final', ['{', ['send', ['"', 'thank you for your use, goodbye', '"'], ';'], '}'], ';'], ['func', '_exit', ['{', ['exit', ';'], '}'], ';'], ['func', '_find', ['{', ['send', ['"', 'The fee in the next 3 months are', '"'], ';'], ['loop', '3', 'times', ['{', ['send', ['$fee', '&', ['"', 'dollars', '"']], ';'], ['$fee', '=', ['$fee', '+', '1.5'], ';'], '}'], ';'], '}'], ';'], ['func', '_complain', ['{', ['get', '$complain', ';'], ['send', ['"', 'Sorry, your complain has been saved.', '"'], ';'], '}'], ';'], ['_final', ';'], '}']
+Process execute: ['exec', ['"', 'echo Hello', '"'], ';']
+Process var: ['"', 'echo Hello', '"']
+Process var: Hello
+
+Send output to file
+Process send: ['send', ['"', 'please input your name', '"'], ';']
+Process exp: ['"', 'please input your name', '"']
+Process var: ['"', 'please input your name', '"']
+Send output to file
+Process get: ['get', '$name', ';']
+Read input from file
+Process var: ['"', 'ben', '"']
+Data load: ['load', '$name', ';']
+Process var: $name
+Find var dict from key: ben
+Find the var dict file: ./var_vault/var_ben.json
+Load variable from file: ./var_vault/var_ben.json
+Process send: ['send', [['"', 'Welcome Mr/Miss ', '"'], '&', '$name', '&', ['"', ', what can I help you?', '"']], ';']
+Process exp: [['"', 'Welcome Mr/Miss ', '"'], '&', '$name', '&', ['"', ', what can I help you?', '"']]
+Process exp: ['"', 'Welcome Mr/Miss ', '"']
+Process var: ['"', 'Welcome Mr/Miss ', '"']
+Process exp: $name
+Process var: $name
+Process exp: ['"', ', what can I help you?', '"']
+Process var: ['"', ', what can I help you?', '"']
+Send output to file
+Process function: ['func', '_main', ['{', ['get', '$cmd', ';'], ['if', [['"', 'enquiry', '"'], 'in', '$cmd'], 'then', '_find', 'elif', [['"', 'complain', '"'], 'in', '$cmd'], 'then', '_complain', 'elif', [['"', 'exit', '"'], 'in', '$cmd'], 'then', '_exit', 'else', ['{', ['send', ['"', "sorry, we don't support this function yet", '"'], ';'], '}'], ';'], '}'], ';']
+Process function: ['func', '_final', ['{', ['send', ['"', 'thank you for your use, goodbye', '"'], ';'], '}'], ';']
+Process function: ['func', '_exit', ['{', ['exit', ';'], '}'], ';']
+Process function: ['func', '_find', ['{', ['send', ['"', 'The fee in the next 3 months are', '"'], ';'], ['loop', '3', 'times', ['{', ['send', ['$fee', '&', ['"', 'dollars', '"']], ';'], ['$fee', '=', ['$fee', '+', '1.5'], ';'], '}'], ';'], '}'], ';']
+Process function: ['func', '_complain', ['{', ['get', '$complain', ';'], ['send', ['"', 'Sorry, your complain has been saved.', '"'], ';'], '}'], ';']
+Error in sentence['_final', ';']
+Error: _final is not a valid syntax

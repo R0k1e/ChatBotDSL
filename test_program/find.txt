@@ -1,0 +1,43 @@
+{
+    exec "echo Hello";
+    func _load {
+        send "please input your name";
+        get $name;
+        load $name;
+    };
+    
+    _load;
+    send "Welcome Mr/Miss " & $name & ", what can I help you?";
+
+    func _main {
+        get $cmd;
+        if "enquiry" in $cmd then _find
+        elif "complain" in $cmd then _complain
+        elif "exit" in $cmd then _exit
+        else {
+            send "sorry, we don't support this function yet";
+        };
+    };
+
+    func _final {
+        save $name;
+        send "thank you for your use, goodbye";
+    };
+
+    func _exit {
+        exit;
+    };
+
+    func _find {
+        send "The fee in the next 3 months are";
+        loop 3 times {
+            send $fee & " dollars";
+            $fee = $fee + 1.5 ;
+        };
+    };
+
+    func _complain {
+        get $complain;
+        send "Sorry, your complain has been saved.";
+    };
+}

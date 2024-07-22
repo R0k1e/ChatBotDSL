@@ -1,0 +1,44 @@
+Read input from file: test_in\program.txt
+Variable vault path: ./var_vault/
+Create out file path: test_out\program.txt2023-11-20-10-37-11
+No variable file, create a new dict
+Debug mode
+No parsed string file, create a new one
+Program file: test_program\program.txt
+Parsed string
+Parsed string:
+[['{', ['$c', '=', '1', ';'], ['get', '$b', ';'], ['send', '$b', ';'], ['func', '_exit', ['{', ['exit', ';'], '}'], ';'], ['func', '_main', ['{', ['send', ['"', 'test', '"'], ';'], ['$c', '=', ['$c', '+', '1'], ';'], ['if', ['$c', '==', '2'], 'then', '_exit', ';'], '}'], ';'], '}']]
+Not save parsed string to file
+Process block: ['{', ['$c', '=', '1', ';'], ['get', '$b', ';'], ['send', '$b', ';'], ['func', '_exit', ['{', ['exit', ';'], '}'], ';'], ['func', '_main', ['{', ['send', ['"', 'test', '"'], ';'], ['$c', '=', ['$c', '+', '1'], ';'], ['if', ['$c', '==', '2'], 'then', '_exit', ';'], '}'], ';'], '}']
+Process Sentence: ['$c', '=', '1', ';']
+Process Sentence: ['get', '$b', ';']
+Read input from file
+Process var: 123
+Process Sentence: ['send', '$b', ';']
+Process exp: $b
+Process var: $b
+Send output to file
+Process Sentence: ['func', '_exit', ['{', ['exit', ';'], '}'], ';']
+Process Sentence: ['func', '_main', ['{', ['send', ['"', 'test', '"'], ';'], ['$c', '=', ['$c', '+', '1'], ';'], ['if', ['$c', '==', '2'], 'then', '_exit', ';'], '}'], ';']
+Process main function
+Process block: ['{', ['send', ['"', 'test', '"'], ';'], ['$c', '=', ['$c', '+', '1'], ';'], ['if', ['$c', '==', '2'], 'then', '_exit', ';'], '}']
+Process Sentence: ['send', ['"', 'test', '"'], ';']
+Process exp: ['"', 'test', '"']
+Process var: ['"', 'test', '"']
+Send output to file
+Process Sentence: ['$c', '=', ['$c', '+', '1'], ';']
+Process exp: ['$c', '+', '1']
+Process exp: $c
+Process var: $c
+Process exp: 1
+Process var: 1
+Process Sentence: ['if', ['$c', '==', '2'], 'then', '_exit', ';']
+Process exp: ['$c', '==', '2']
+Process exp: $c
+Process var: $c
+Process exp: 2
+Process var: 2
+Process block: ['{', ['exit', ';'], '}']
+Process Sentence: ['exit', ';']
+Not save variable to file
+Save in the output file: test_out\program.txt2023-11-20-10-37-11

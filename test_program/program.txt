@@ -1,0 +1,14 @@
+{
+          $c = 1;
+          get $b;
+          send $b;
+          func _exit {
+            exit;
+          };
+
+          func _main {
+            send "test";
+            $c = $c + 1;
+            if $c == 2 then _exit;
+          }; 
+}
